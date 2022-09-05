@@ -38,7 +38,14 @@ const BottomSheetStack = () => {
 				component={DetailsBSH}
 				sharedElements={(route, otherRoute, showing) => {
 					const { item } = route.params;
-					return [`item.photo`];
+					return [
+						`item.${item.key}.bg`,
+
+						`item.${item.key}.subTitle`,
+						`item.${item.key}.title`,
+						`item.${item.key}.img`,
+						`general.bg`,
+					];
 				}}
 				options={{
 					cardStyleInterpolator: forFade,

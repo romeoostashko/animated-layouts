@@ -7,7 +7,10 @@ export const BackIcon = ({ onPress }) => {
 		<AntDesing
 			name="arrowleft"
 			size={24}
-			style={{ padding: 12 }}
+			style={{
+				paddingHorizontal: 8,
+				zIndex: 9,
+			}}
 			color="#444"
 			onPress={onPress}
 		/>
