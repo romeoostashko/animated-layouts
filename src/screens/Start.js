@@ -10,10 +10,17 @@ export const Start = ({ navigation }) => {
 			>
 				<Text>Bottom Sheet Animated Layout</Text>
 			</TouchableOpacity>
+
+			<TouchableOpacity
+				onPress={() => navigation.navigate("SocialNetworkStack")}
+				style={styles.buttonContainer}
+			>
+				<Text>SocialNetworkAnimated Layout</Text>
+			</TouchableOpacity>
 		</SafeAreaView>
 	);
 };
 
 const styles = StyleSheet.create({
-	buttonContainer: { padding: 8, backgroundColor: "orange" },
+	buttonContainer: { padding: 8, backgroundColor: "orange", marginBottom: 8 },
 });

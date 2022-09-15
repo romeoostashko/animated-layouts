@@ -11,7 +11,7 @@ export const BackIcon = ({ onPress }) => {
 				paddingHorizontal: 8,
 				zIndex: 9,
 			}}
-			color="#444"
+			color="white"
 			onPress={onPress}
 		/>
 	);
